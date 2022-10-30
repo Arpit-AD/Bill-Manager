@@ -22,7 +22,7 @@ const BillList = ({ bills }) => {
     let billTemp = [];
     if (budget) {
       let sortedBills = bills;
-      sortedBills = sortedBills.sort((a, b) => a.amount - b.amount);
+      sortedBills = sortedBills.sort((a, b) => b.amount - a.amount);
       // console.log(sortedBills);
       let count = 0,
         amt = budget;
