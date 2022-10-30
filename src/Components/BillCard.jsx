@@ -38,7 +38,11 @@ const BillCard = (props) => {
       <div className="text-white text-black glass rounded-lg">
         <div className="p-3 bg-[#252525] font-extrabold text-white rounded-t">
           <div className="flex justify-between">
-            <div>RECEIPT NUMBER - {props.i + 1}</div>
+           
+<div>
+            {" "}
+            <span className="font-bold">Payment Id -</span> {bill.id}
+          </div>
             <div className="flex">
               <div>
                 {" "}
@@ -61,10 +65,7 @@ const BillCard = (props) => {
           </div>
         </div>
         <div className="p-5">
-          <div>
-            {" "}
-            <span className="font-bold">Payment Id -</span> {bill.id}
-          </div>
+  
           <div>
             {" "}
             <span className="font-bold">Description -</span>{" "}
