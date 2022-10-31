@@ -30,7 +30,7 @@ function LineChart(props) {
   for(let i = 0; i < props.billData.length; i++){
     var objDate = props.billData[i].date;
     var mon = objDate.split('-')[1];
-    monthSpend[mon-1] += props.billData[i].amount;
+    monthSpend[mon-1] = Number(monthSpend[mon-1]) + Number(props.billData[i].amount);
   }
   const [data, setData] = useState({
     labels: [
